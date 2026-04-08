@@ -12,68 +12,68 @@ body {
 }
 
 h1 {
-    color: #FFF8F0 !important;
+    color: #5C1F3E !important;
     margin-left: 10px;
 }
-
+ 
 h2 {
     color: #8B3A62 !important;
     margin-left: 10px;
 }
-
+ 
 h3 {
     color: #5C1F3E !important;
     margin-left: 10px;
 }
-
+ 
 p {
     margin-left: 10px;
     max-width: 800px;
 }
-
+ 
 img {
     margin: 10px;
     border-radius: 5px;
 }
-
+ 
 img:hover {
     opacity: 0.9;
 }
-
+ 
 /* navigācija */
 .w3-bar {
     background-color: #5C1F3E !important;
 }
-
+ 
 .w3-bar a, .w3-bar button {
     color: #FFF8F0 !important;
 }
-
+ 
 .w3-bar a:hover, .w3-bar button:hover {
     background-color: #8B3A62 !important;
     color: #ffffff !important;
 }
-
+ 
 /* dropdown saturs */
 .w3-dropdown-content {
     background-color: #5C1F3E !important;
 }
-
+ 
 .w3-dropdown-content a {
     color: #FFF8F0 !important;
 }
-
+ 
 .w3-dropdown-content a:hover {
     background-color: #8B3A62 !important;
 }
-
+ 
 /* lejupielādes poga */
 .lejupielade-btn {
     background-color: #8B3A62 !important;
     color: #ffffff !important;
     margin-left: 10px;
 }
-
+ 
 .lejupielade-btn:hover {
     background-color: #5C1F3E !important;
 }
