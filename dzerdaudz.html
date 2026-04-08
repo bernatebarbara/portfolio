@@ -1,1 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dzerdaudz</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="css/stils.css">
+    </head>
+    <body>
 
+        <!--navigācija-->
+        <div class="w3-top">
+            <div class="w3-bar w3-padding">
+                <a href="index.html" class="w3-button">Portfolio</a>
+                <a href="index.html#attelu-apstrade" class="w3-button">Attēlu apstrāde</a>
+                <a href="index.html#tekstapstrade" class="w3-button">Tekstapstrāde</a>
+                <div class="w3-dropdown-hover">
+                    <button class="w3-button">Uzdevumi ▾</button>
+                    <div class="w3-dropdown-content w3-bar-block w3-border">
+                        <a href="forma.html" class="w3-bar-item w3-button">Forma</a>
+                        <a href="dzer.html" class="w3-bar-item w3-button">Dzer</a>
+                        <a href="dzerdaudz.html" class="w3-bar-item w3-button">Dzerdaudz</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--saturs-->
+        <div class="w3-content w3-card w3-white w3-padding w3-margin-bottom">
+            <h1>Vairāku izvēļu pogas piemērs</h1>
+            <p>Izvēlies dzērienu:</p>
+            <form>
+                <input type="checkbox" value="3.60"> kafija<br>
+                <input type="checkbox" value="2.50"> sula<br>
+                <input type="checkbox" value="3.20"> kakao<br>
+                <input type="checkbox" value="2.20"> tēja<br><br>
+
+                <input type="button" value="Jāmaksā" onclick="maksaCheckbox()" class="w3-button w3-light-grey">
+            </form>
+            <p id="maksa"></p>
+        </div>
+
+        <script>
+            function maksaCheckbox() {
+                let dz = document.querySelectorAll('input[type="checkbox"]');
+                let sum = 0;
+                for (let i = 0; i < dz.length; i++) {
+                    if (dz[i].checked) sum += Number(dz[i].value);
+                }
+                document.getElementById("maksa").innerHTML = "Jāmaksā " + sum.toFixed(2) + " €";
+            }
+        </script>
+
+    </body>
+</html>
