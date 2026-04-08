@@ -1,1 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dzer</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="css/stils.css">
+    </head>
+    <body>
 
+        <!--navigācija-->
+        <div class="w3-top">
+            <div class="w3-bar w3-padding">
+                <a href="index.html" class="w3-button">Portfolio</a>
+                <a href="index.html#attelu-apstrade" class="w3-button">Attēlu apstrāde</a>
+                <a href="index.html#tekstapstrade" class="w3-button">Tekstapstrāde</a>
+                <div class="w3-dropdown-hover">
+                    <button class="w3-button">Uzdevumi ▾</button>
+                    <div class="w3-dropdown-content w3-bar-block w3-border">
+                        <a href="forma.html" class="w3-bar-item w3-button">Forma</a>
+                        <a href="dzer.html" class="w3-bar-item w3-button">Dzer</a>
+                        <a href="#" class="w3-bar-item w3-button">Uzdevums 3</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--saturs-->
+        <div class="w3-content w3-card w3-white w3-padding w3-margin-bottom">
+            <h1>Vienas izvēles pogas piemērs</h1>
+            <p>Izvēlies vienu dzērienu:</p>
+            <form>
+                <input type="radio" name="drink" value="3.60"> kafija<br>
+                <input type="radio" name="drink" value="2.50"> sula<br>
+                <input type="radio" name="drink" value="3.20"> kakao<br>
+                <input type="radio" name="drink" value="2.20"> tēja<br><br>
+
+                <input type="button" value="Jāmaksā" onclick="maksaRadio()" class="w3-button w3-light-grey">
+                <span id="price" style="margin-left:15px;"></span>
+            </form>
+        </div>
+
+        <script>
+            function maksaRadio() {
+                let dz = document.getElementsByName('drink');
+                for (let i = 0; i < dz.length; i++) {
+                    if (dz[i].checked) {
+                        document.getElementById("price").innerHTML = "Jāmaksā " + dz[i].value + " €";
+                        return;
+                    }
+                }
+            }
+        </script>
+
+    </body>
+</html>
