@@ -1,10 +1,9 @@
-
 /*
     Datorikas portfolio - stils.css
 */
 
 body {
-    background-image: url("../fail/FONS.webp") !important;
+    background-image: url("../images/fons.png") !important;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -46,13 +45,26 @@ img:hover {
     background-color: #5C1F3E !important;
 }
 
-.w3-bar a {
+.w3-bar a, .w3-bar button {
     color: #FFF8F0 !important;
 }
 
-.w3-bar a:hover {
+.w3-bar a:hover, .w3-bar button:hover {
     background-color: #8B3A62 !important;
     color: #ffffff !important;
+}
+
+/* dropdown saturs */
+.w3-dropdown-content {
+    background-color: #5C1F3E !important;
+}
+
+.w3-dropdown-content a {
+    color: #FFF8F0 !important;
+}
+
+.w3-dropdown-content a:hover {
+    background-color: #8B3A62 !important;
 }
 
 /* lejupielādes poga */
