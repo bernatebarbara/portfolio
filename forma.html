@@ -1,1 +1,59 @@
 
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="css/stils.css">
+    </head>
+    <body>
+
+        <!--navigācija-->
+        <div class="w3-top">
+            <div class="w3-bar w3-padding">
+                <a href="index.html#attelu-apstrade" class="w3-button">Attēlu apstrāde</a>
+                <a href="index.html#tekstapstrade" class="w3-button">Tekstapstrāde</a>
+                <div class="w3-dropdown-hover">
+                    <button class="w3-button">Uzdevumi ▾</button>
+                    <div class="w3-dropdown-content w3-bar-block w3-border">
+                        <a href="forma.html" class="w3-bar-item w3-button">Forma</a>
+                        <a href="#" class="w3-bar-item w3-button">Uzdevums 2</a>
+                        <a href="#" class="w3-bar-item w3-button">Uzdevums 3</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--saturs-->
+        <div class="w3-content w3-card w3-white w3-padding w3-margin-bottom">
+            <h1>Formas un ievadlauku piemērs</h1>
+
+            <form>
+                <p>Šodienas datums <input name="datums"></p>
+                <p>Ja gribi uzzināt šodienas datumu, spied pogu DATUMS
+                    <input type="button" onclick="datums.value=new Date();" name="poga" value="DATUMS" class="w3-button w3-light-grey">
+                </p>
+                <p>Ja gribi izdzēst datuma lodziņa saturu, spied pogu RESET
+                    <input type="reset" value="RESET" class="w3-button w3-light-grey">
+                </p>
+            </form>
+
+            <hr>
+
+            <form class="w3-margin-bottom">
+                <p>1. skaitlis <input type="text" name="sk1" class="w3-input w3-border" style="width:150px; display:inline;"></p>
+                <p>
+                    <input value="+" name="reiz" onclick="rez.value=Number(sk1.value)+Number(sk2.value)" type="button" class="w3-button w3-light-grey">
+                    <input value="-" name="reiz" onclick="rez.value=sk1.value-sk2.value" type="button" class="w3-button w3-light-grey">
+                    <input value="X" name="reiz" onclick="rez.value=sk1.value*sk2.value" type="button" class="w3-button w3-light-grey">
+                    <input value="/" name="dali" onclick="rez.value=sk1.value/sk2.value" type="button" class="w3-button w3-light-grey">
+                </p>
+                <p>2. skaitlis <input type="text" name="sk2" class="w3-input w3-border" style="width:150px; display:inline;"></p>
+                <p>Rezultāts <input name="rez" class="w3-input w3-border" style="width:150px; display:inline;"></p>
+            </form>
+        </div>
+
+    </body>
+</html>
